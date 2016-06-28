@@ -11,7 +11,7 @@
 * [糗事百科爬虫](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/%E7%B3%97%E4%BA%8B%E7%99%BE%E7%A7%91%E7%88%AC%E8%99%AB.md)
 * [通过Python分割文件](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/%E9%80%9A%E8%BF%87Python%E5%88%86%E5%89%B2%E6%96%87%E4%BB%B6.md)
 * [Preparations for Reading Paper](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/Preparations%20for%20Reading%20Paper.md)
-* [文件的读取与输出]()
-* [通过Python将大文件进行分割]()
+* [文件的读取与输出](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/%E6%96%87%E4%BB%B6%E7%9A%84%E8%BE%93%E5%87%BA%E4%B8%8E%E8%BF%AD%E4%BB%A3.md)
+
 
 后续博客的内容会不断更新，欢迎关注:) :octocat:
