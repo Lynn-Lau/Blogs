@@ -22,6 +22,7 @@
 
 ##### Mendeley 跨平台文献管理软件 
 ![Mendeley](https://lynnlaulsl.files.wordpress.com/2016/06/mendeley-logo-red.png)
+
 Mendeley是一款免费的跨平台优秀文献管理软件，[这是官网](https://www.mendeley.com/)。因为国内外文献几乎都是PDF格式，所以均可以通过此软件进行集中管理，大大省去了各位在各个盘符文件夹下搜文献的时间，也不必为管理文献们建立一个又一个的”新建文件夹“，触手可得。除此之外，Mendeley也是也一款跨平台的文献阅读工具，在Android/iOS都可以使用，而且提供云服务进行同步。如果你在PC端阅读某篇文件，然后做了一定的笔记，经过云同步之后，在其他的平台同样会看到你的笔记，以及阅读的进度。
 
 如下图所示
