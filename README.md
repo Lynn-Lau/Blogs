@@ -7,7 +7,7 @@
 
 ####  1. Python的面向对象编程简介系列
 
-* [Python与面向对象编程](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/Python%E4%B8%8E%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.md)
+* [浅谈Python与面向对象编程](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/Python%E4%B8%8E%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.md)
 * [浅谈Python的面向对象编程(二)](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/%E6%B5%85%E8%B0%88Python%E7%9A%84%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B%20%E4%BA%8C.md)
 * [浅谈Python的面向对象编程(三)](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/%E6%B5%85%E8%B0%88Python%E7%9A%84%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B%20%E4%B8%89.md)
 * [浅谈Python的面向对象编程(四)](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/%E5%87%BD%E6%95%B0%E4%B8%8E%E5%A4%9A%E6%80%81.md)
@@ -17,7 +17,7 @@
 
 参加了[Coursera](https://www.coursera.org/learn/python-data/home/week/5)的公开课，课程内容主要涉及的是*__Python Data Structure__*，内容比较浅显，代码都是课后习题答案，并附带自己学习疑惑和理解
 
-* [Preparations for Reading Paper](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/Preparations%20for%20Reading%20Paper.md)
+* [Code for Coursera 1st](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/Coursera%20Code%20Python%20.md)
 * ​
 
 
