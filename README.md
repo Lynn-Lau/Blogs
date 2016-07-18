@@ -17,8 +17,8 @@
 
 参加了[Coursera](https://www.coursera.org/learn/python-data/home/week/5)的公开课，课程内容主要涉及的是*__Python Data Structure__*，内容比较浅显，代码都是课后习题答案，并附带自己学习疑惑和理解
 
-* [Code for Coursera 1st](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/Coursera%20Code%20Python%20.md)
-* ​
+* [Code for Coursera 1st](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/Coursera%20Code%20Python%20.md)   *__List__*列表操作
+* [Code for Coursera 2nd](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/Coursera%20Code%20Python%202nd.md)  字典*__dict__*介绍
 
 
 #### 3. Python Practise 系列
