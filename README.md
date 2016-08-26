@@ -35,6 +35,12 @@
 
 #### 5. 如何优雅地使用Windows系列
 
+#### 6. Data Structure and Algorithm, DSA
+
+这一部分主要是介绍自己学习数据结构与算法的学习笔记和相关问题总结，通过Python语言进行描述，正在学习当中: )
+
+* [Binary Search and Linear Search](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/Binary%20Search.md)
+
 
 
 后续博客的内容会不断更新，欢迎关注:) :octocat:
