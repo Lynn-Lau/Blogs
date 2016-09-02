@@ -184,4 +184,46 @@
     True
     ```
 
+    移除
+
+    移除链表中的节点大约要分成两个步骤。第一，遍历链表在链表中找到要移除的节点；第二，删除节点。第一步的操作和前面在链表中检索节点相同，需要引用外部变量进行遍历，知道找到目的节点为止。当我们`current`在到达链表末尾之前，找到节点之后删除。
+
+    在我们遍历链表找到目的节点之后，`found`变成了`True`，`current`变量中存放的是目的节点，那么我们如何将该节点删除，并且将`current`前面的节点与`current`后面的节点连接起来呢？这个时候我们需要另外一个变量存放`current`前面的一个节点，当目的节点`current`被删除之后指向目的节点后面的节点。再次引用外部变量`previous`，用来存放`current`前一个节点，并且只存放前面一个节点，这样当`current`被删除之后可以将剩余的链表部分连接起来。
+
+    实现代码如下：
+
+    ```python
+    def remove(self, item):
+        current = self.head
+        previous = None
+        found = False
+        while not found:
+            if current.getdata == item:
+                found = True
+            else:
+                previous = current
+                current = current.getnext()            
+        
+        if previoud == None:
+            self.head = current.getnext()
+        else:
+            previous.setnext(current.getnext())
+    ```
+
+    上面的代码为移除节点的全部代码，分析上面的代码。第二、三行，初始化两个外部引用变量，`current`从头`head`开始，像其他遍历链表的方法一样。`previous`变量总是落后`current`变量一个节点，头节点前面为空，所以`previous`初始化为`None`，通过下面的图中也可以看出。`found`同样初始化为布尔类型值`False`。
+
+    第六、七行为遍历链表的过程，判断要移除的目的节点是否存放在了`current`变量中。如果是的话，说明找到了目的节点，`found`变成了`True`；如果不是的话，继续向下寻找，`previous`和`current`变量再次移动一个节点。在这比较重要的一点是，首先要将`previous`移动到`current`前面一个节点的位置，然后`current`才能继续移动一个节点，顺序一定不能颠倒。如下图所示。
+
+    ​                              ![](https://lynnlaulsl.files.wordpress.com/2016/09/removeinit.png)
+
+    ​                          ![](https://lynnlaulsl.files.wordpress.com/2016/09/prevcurr.png)
+
+    上面代码均为移除方法中的检索步骤，当检索步骤完成之后，那么我们就要将找到的目的节点从链表中进行删除。在删除节点的时候，有一种特殊情况是需要考虑的，就是如果要删除的节点恰好是`head`后的第一个节点，如下图所示，此时`previous`为`None`，这种情况下不需要使用`previous`进行删除，直接将`head`指向`current`的下一个节点即可。
+
+    ​                                ![](https://lynnlaulsl.files.wordpress.com/2016/09/remove2.png)
+
+    ​                                 ![](https://lynnlaulsl.files.wordpress.com/2016/09/remove.png)
+
+    在上面代码的十二行，是为了检查特殊情况是否存在，如果存在的话，那么第十三行代码则将头指向了`current`后面的一个节点，完成了删除，如果特殊情况不存在的话，那么执行第十五行代码。将`previous`的节点重新设置链接，使用`setnext`的方法，其重新链接的节点为`current`后面的节点，即`current.getnext`。至此完成了节点的移除。
+
     ​
