@@ -239,12 +239,11 @@
             return
         while current.next is not None:
             current = current.getnext
-        current.next = temp
-        temp.next = None
+        current.next_ = temp
+        temp.next_ = None
     ```
 
     分析上面的代码，第二行、三行，初始化外部引用变量`current`，创建临时节点`temp`。第四、五、六行，主要考虑到如果要添加的链表原先为空链表，此时不需要用到`current`。如果是空链表，那么使用下面的方法添加节点；如果不是空链表，那么继续遍历链表，一直到最后一个节点，`current`变量为最后一个节点。首先，将`current `的`next`指向`temp`节点，然后将`temp`的`next`链接到`None`，至此在链表的末尾成功添加了新的节点。
 
-     
 
 关于简单链表的操作和方法暂时介绍这些。
