@@ -41,7 +41,19 @@
 
 * [Binary Search and Linear Search](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/Binary%20Search.md)
 * [Basic LInkedlist](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/Linked%20List.md#linked-list)
+* [Stacks](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/Data%20Structure%20and%20Algorithm%2C%20DSA%20%20Stacks.md)
+* [Sorting Algorithms](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/Data%20Structure%20and%20Algorithms%20DSA%EF%BC%8C%20%20Sorting%20%20Algorithm%20(1).md)
 
 
+#### 7. Interviews
+
+本部分是在帮师兄师姐笔试过程中遇到的一些编程题目，比较常见而且典型。
+
+* [Goldbach's Conjecture from Alibaba](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/%E5%93%A5%E5%BE%B7%E5%B7%B4%E8%B5%AB%E7%8C%9C%E6%83%B3%E9%AA%8C%E8%AF%81%E5%8F%8A%E8%B4%A8%E6%95%B0%E7%9B%B8%E5%85%B3-Tencent%20Interview.md)
+* [Counting Stars from Alibaba](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/%E8%B0%83%E6%95%B4%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6%E7%9A%84%E4%BD%8D%E7%BD%AE--%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4.md)
+
+#### 8. Using Windows Elegantly
+
+* [配置C/C++环境](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/Windows%20%E9%85%8D%E7%BD%AEC%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83.md)
 
 后续博客的内容会不断更新，欢迎关注:) :octocat:
