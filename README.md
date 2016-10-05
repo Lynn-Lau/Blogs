@@ -43,6 +43,7 @@
 * [Basic LInkedlist](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/Linked%20List.md#linked-list)
 * [Stacks](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/Data%20Structure%20and%20Algorithm%2C%20DSA%20%20Stacks.md)
 * [Sorting Algorithms](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/Data%20Structure%20and%20Algorithms%20DSA%EF%BC%8C%20%20Sorting%20%20Algorithm%20(1).md)
+* [Tree and Binary Tree](https://github.com/Lynn-Lau/Blogs/blob/master/My_Blogs/Data%20Structure%20and%20Algorithm%2C%20Tree%20and%20Binary%20Tree.md)
 
 
 #### 7. Interviews
