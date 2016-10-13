@@ -80,73 +80,12 @@ mylist = ['a', # root
 
 * 向二叉树中添加左子树：
 
-  在向初始化的二叉树中添加左子节点的时候，因为初始化二叉树时候为空，所以不用过多考虑。假如原二叉树的左子节点已经存在元素，那么需要将此处的元素保持在左子节点的位置向下移动一层，这养空出的位置可以添加新的左子节点。因为二叉树的每个节点的都是三元组，所以使用的方法就是`pop.binarytree[1]`，然后进行操作。
+  在向初始化的二叉树中添加左子节点的时候，因为初始化二叉树时候为空，所以不用过多考虑，假如不能确定，左子节点是不是空，需要将左子节点的位置内容删除，然后将新节点作为左节点，原有的节点向下移动一层，以保证其任然在左节点。因为二叉树的每个节点的都是三元组，所以使用的方法就是`pop.binarytree[1]`，然后进行操作。
 
   ```python
   #
   def insertleft(root, newleft):
-      temp = root.pop(1)
-      # len(temp)>1 indicates that there is left child
-      # move the child node to the next level.
-      if len(temp) > 1:
-          root.insert(1, [newleft, temp, []])
-      # there is no left child here.
-      else:
-          root.insert(1, [newleft, [], []])
+      
   ```
 
-* 向二叉树中添加右子树：
-
-  向二叉树中添加右子树的方法和向二叉树中添加左子树的方法一样，只是将左子树变成右子树就可以
-
-  ```python
-  def insertright(root, newright):
-      temp = root.pop(2)
-      if len(temp) > 1:
-          root.insert(2, [newright, [], temp])
-      else:
-          root.insert(2, [newright, [], []])
-  ```
-
-* 返回二叉树的子树和根值
-
-  只需要将列表中的第一值返回就可以
-
-  ```python
-  def rtrnrtvlaue(root):
-      return root[0]
-  ```
-
-  同样的操作可以返回二叉树的左子树和右子树。
-
-  ```python
-  def rtrnleft(root):
-      return root[1]
-
-  def rtrnrigh(root)t:
-      return root[2]
-  ```
-
-二叉树中初步了解的各种方法，大约就这些，将这些代码组合在一起可以写一个简单的二叉树。
-
-```python
-class binarytree():
-    
-    def btree(root):
-        return [root, None, None]
-    
-    def insertleft(root, newleft):
-        temp = root.pop(2)
-        if len(temp) > 1:
-            root.inser(1, [newleft, temp, None])
-        else:
-            root.insert(1,[newleft, None, None])
-            
-    def insertright(root, newright):
-        temp = root.pop(2)
-        if len(temp) > 1:
-            root.insert(2, [newright, None, temp])
-        else:
-            root.insert(2, [newright, None, None])
-```
-
+  ​
