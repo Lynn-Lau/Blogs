@@ -8,7 +8,7 @@
 
 在使用超级终端进行登录的过程中，下图中有一个地方需要注意一下。
 
- ![ConfigTER](C:\Users\lynn\Desktop\H3C 手册\H3Cpic\ConfigTER.png)
+ ![ConfigTER](https://lynnlaulsl.files.wordpress.com/2016/10/configter.png)
 
 上图中的**Connect using**，选择**COM3**，官方的教程给出的使用的是**COM1**。官方的这个错误也直接我自己配置过程拖慢了很长时间，自己尝试了**COM3**，出现了正确的界面才可以。
 
