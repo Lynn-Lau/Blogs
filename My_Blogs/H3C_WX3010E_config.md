@@ -8,9 +8,7 @@
 
 在使用超级终端进行登录的过程中，下图中有一个地方需要注意一下。
 
-如果使用的是直接将串口DB-9口直接与电脑的串口连接，那么在配置超级终端的时候我们选择使用**COM1**进行连接。
-
- ![ConfigTER](https://lynnlaulsl.files.wordpress.com/2016/10/configter.png)
+如果使用的是直接将串口DB-9口直接与电脑的串口连接，那么在配置超级终端的时候我们选择使用**COM1**进行连接。 ![ConfigTER](https://lynnlaulsl.files.wordpress.com/2016/10/configter.png)
 
 如果我们使用了DB-9和串口转USB接线口的话，将USB线接入电脑的USB接口，此时配置超级终端的时候，选择上图中的**Connect using**，选择**COM3**。官方的教程在这个问题上没有解释清楚，也直接造成我自己配置过程拖慢了很长时间，因为我使用了USB串口转接线所以尝试了很多此，自己尝试了**COM3**，出现了正确的界面才可以。
 
