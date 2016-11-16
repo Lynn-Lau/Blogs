@@ -4,13 +4,14 @@
 
 #### 1. 通过Console进行登录
 
-通过Console口进行本地登录是登录设备的最基本的方式，也是配置通过其他方式登录设备的基础，只有先从Console登录完成基本的设置，然后才可以进行下一步的配置，所以这一步必不可少。使用Console进行登录时候需要用到串口转USB接口线，当Console接口线准备之后，在PC端配置超级终端进行登录。
+通过Console口进行本地登录是登录设备的最基本的方式，也是配置通过其他方式登录设备的基础，只有先从Console登录完成基本的设置，然后才可以进行下一步的配置，所以这一步必不可少。使用Console进行登录时候可能会需要用到串口转USB接口线，也可以将`DB9`口直接接入有串口的插口中。当Console接口线完成之后，在PC端配置超级终端进行登录。
 
 在使用超级终端进行登录的过程中，下图中有一个地方需要注意一下。
 
-如果使用的是直接将串口DB-9口直接与电脑的串口连接，那么在配置超级终端的时候我们选择使用**COM1**进行连接。 ![ConfigTER](https://lynnlaulsl.files.wordpress.com/2016/10/configter.png)
+![ConfigTER](https://lynnlaulsl.files.wordpress.com/2016/10/configter.png)
 
-如果我们使用了DB-9和串口转USB接线口的话，将USB线接入电脑的USB接口，此时配置超级终端的时候，选择上图中的**Connect using**，选择**COM3**。官方的教程在这个问题上没有解释清楚，也直接造成我自己配置过程拖慢了很长时间，因为我使用了USB串口转接线所以尝试了很多此，自己尝试了**COM3**，出现了正确的界面才可以。
+* 如果使用的是串口转USB接口，然后由USB接口接入电脑，那么在使用超级终端进行登陆之前，需要确定电脑已经正确的安装了驱动程序。在超级终端登陆的过程中，上图步骤中的**Connect using**，选择**COM3/4/5**，官方的教程没有介绍这一步骤，直接给出的使用的是**COM1**。官方的这个步骤做的不好，并没有考虑到使用串口转USB接口，这个问题也直接我自己配置过程拖慢了很长时间，自己尝试了**COM3**，出现了正确的界面才可以。
+* 如果直接使用串口线接入电脑，那么下面步骤和官方给的教程一样，在超级终端的登陆过程中，使用**Connect using**时，选择**COM1**接口。
 
 #### 2. 配置Web服务器功能设置权限
 
@@ -21,15 +22,18 @@
 ```shell
 <H3C>sys  //进入命令行
 [H3C]interface Vlan-interface 1
-[H3C-Vlan-interface1]ip address 192.168.1.100 255.255.255.0 //添加新的ip地址和掩码
+# 添加新的IP地址和掩码
+[H3C-Vlan-interface1]ip address 192.168.1.100 255.255.255.0 
 [H3C-Vlan-interface1]quit
 ```
 
 上面设置的部分是为WX3010E添加新的ip地址和子网掩码，用于后面部分的Web页面进行登录。下面还要设置用户权限。
 
 ```shell
-[H3C]local-user admin //设置用户名为"admin"
-[H3C-luser-admin]password simple admin  //设置密码为"admin"
+# 设置用户名为“admin”
+[H3C]local-user admin
+# 设置密码为“admin”
+[H3C-luser-admin]password simple admin  
 [H3C-luser-admin]service-type telnet 
 [H3C-luser-admin]quit
 ```
@@ -37,8 +41,10 @@
 上面设置的部分是为3010设置用户权限。下面进行用户视图设置
 
 ```shell
-[H3C]user vty 0 4 //进入用户视图
-[H3C-ui-vty0-4]auth s //对用户进行授权
+# 进入用户视图
+[H3C]user vty 0 4 
+# 对用户进行授权
+[H3C-ui-vty0-4]auth s 
 [H3C-ui-vty0-4]quit
 ```
 
