@@ -37,18 +37,18 @@
    * TCP，Transmission Control Protocol，传输控制协议
    * UDP，User Datagram Protocol，用户数据报协议
 4. 应用层
-   * DNS，Domain Name Sysytem
+   * DNS，Domain Name Sysytem，下层使用的是UDP协议进行数据传输。
    * DHCP，Dynamic Host Configuration Protocol
-   * FTP，File Transfer Protocol  两个端口20、21端口，20是数据端口，21是控制端口
-   * HTTP，Hyper Text Transfer Protocol
+   * FTP，File Transfer Protocol  两个端口20、21端口，20是数据端口，21是控制端口，下层使用的是TCP的可靠传输服务。
+   * HTTP，Hyper Text Transfer Protocol 默认的端口号是80，下册使用的是TCP可靠传输服务。
    * HTTPS，Hyper Text Transfer Protocol Secure
    * IMAP，Internet Message Access Protocol
    * SIP，Session Initial Protocol 会话初始协议
-   * Telnet，远程登陆协议
+   * Telnet，远程终端协议，通过TCP进行连接。
    * RADIUS，
    * POP，Post Office Protocol
    * SNMP，Simple Network Management Protocol 简单网络控制协议
    * SMTP，Short Mail Transfer Protocol 简单邮件传输协议 端口是25
-   * TFTP，Trivial File Transfer Protocol
+   * TFTP，Trivial File Transfer Protocol 简单文件传输协议
    * SSH，Secure Shell
    * SSL，Secure Socket Layer
