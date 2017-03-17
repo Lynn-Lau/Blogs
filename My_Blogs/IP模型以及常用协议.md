@@ -52,3 +52,7 @@
    * TFTP，Trivial File Transfer Protocol 简单文件传输协议
    * SSH，Secure Shell
    * SSL，Secure Socket Layer
+
+在各个协议层中，不同层次的协议调用下层协议如下图所示。
+
+<img src="https://lynnlaulsl.files.wordpress.com/2017/03/ip_protocol.png" width="600px" />
