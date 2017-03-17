@@ -26,8 +26,8 @@
 2. 网络层
    * IP，IPv4、IPv6；
    * IPsec，Internet Protocol Security；
-   * IGMP，Internet Group Management Protocol；
-   * ICMP，Internet Control Message Protocol；
+   * IGMP，Internet Group Management Protocol；网际组管理协议
+   * ICMP，Internet Control Message Protocol；网际控制报文协议
    * ARP，RARP；
    * OSPF，Open Shortest Path First，开放最短路径优先；
    * RIP，
