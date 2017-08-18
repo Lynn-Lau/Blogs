@@ -41,16 +41,16 @@
    * DHCP，Dynamic Host Configuration Protocol
    * FTP，File Transfer Protocol  两个端口20、21端口，20是数据端口，21是控制端口，下层使用的是TCP的可靠传输服务。
    * HTTP，Hyper Text Transfer Protocol 默认的端口号是80，下册使用的是TCP可靠传输服务。
-   * HTTPS，Hyper Text Transfer Protocol Secure
+   * HTTPS，Hyper Text Transfer Protocol Secure 默认的端口号是443/TCP/UDP
    * IMAP，Internet Message Access Protocol
    * SIP，Session Initial Protocol 会话初始协议
-   * Telnet，远程终端协议，通过TCP进行连接。
+   * Telnet，远程终端协议，通过TCP进行连接，端口号23/TCP
    * RADIUS，
-   * POP，Post Office Protocol
+   * POP3，Post Office Protocol 默认的端口号110/TCP
    * SNMP，Simple Network Management Protocol 简单网络控制协议
-   * SMTP，Short Mail Transfer Protocol 简单邮件传输协议 端口是25
-   * TFTP，Trivial File Transfer Protocol 简单文件传输协议
-   * SSH，Secure Shell
+   * SMTP，Short Mail Transfer Protocol 简单邮件传输协议 端口是25/TCP
+   * TFTP，Trivial File Transfer Protocol 简单文件传输协议 端口号69/UDP
+   * SSH，Secure Shell 端口号22/TCP
    * SSL，Secure Socket Layer
 
 在各个协议层中，不同层次的协议调用下层协议如下图所示。
