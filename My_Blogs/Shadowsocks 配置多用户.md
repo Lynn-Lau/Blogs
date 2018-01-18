@@ -12,22 +12,31 @@
 
 ```json
 {
-    "server":"your vps server ip",  #此处为代理VPS的IP地址
+    "server":"172.172.172.172",
     "local_address":"127.0.0.1",
-    "local_port":"1080",
+    "local_port":1080,
     "port_password":{
-    "8381":"password1",
-    "8382":"password2",
-    "8383":"password3",
-    "8384":"password4"
-    }, #此处为多用户分别对应的端口号和密码，注意逗号
+        "8381":"password",
+        "8382":"password",
+        "8383":"password",
+        "8384":"password",
+        "8385":"password",
+        "8386":"password",
+        "8387":"password",
+        "8388":"password"
+    },
     "timeout":300,
     "method":"aes-256-cfb",
-    "fast_open":"false"
+    "fast_open":false
+
 }
 ```
 
-上面代码中配置了四个用户，可以根据实际情况自行增减，上面命令完成后，按`Esc`键，然后按`Shift`+`:`键，再然后输入`wq`，即完成了上述命令的保存，然后再按回车，退出了json文件配置环境，此时多用户配置仍然没有生效，此时在VPS上需要将Shadowsocks服务重新启动才能生效。重启Shadowsocks服务，在命令行输入，
+上面代码中配置了四个用户，可以根据实际情况自行增减，上面命令完成后，按`Esc`键，然后按`Shift`+`:`键，再然后输入`wq`，即完成了上述命令的保存，然后再按回车，退出了json文件配置环境，此时多用户配置仍然没有生效，此时在VPS上需要将Shadowsocks服务重新启动才能生效。
+
+设置开机启动，输入`vi/etc/rc.local`，使用`#`将shdowsocks服务器启动设置注释掉，另起一行输入`ssserver -c /etc/shadowsocks.json -d start`，保存退出，重启服务器即可
+
+重启Shadowsocks服务，在命令行输入，
 
 ```shell
 ssserver -c /etc/shadowsocks.json -d restart
