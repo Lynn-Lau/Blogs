@@ -20,11 +20,8 @@
         "8382":"password",
         "8383":"password",
         "8384":"password",
-        "8385":"password",
-        "8386":"password",
-        "8387":"password",
-        "8388":"password"
-    },
+        "8385":"password"
+        },
     "timeout":300,
     "method":"aes-256-cfb",
     "fast_open":false
